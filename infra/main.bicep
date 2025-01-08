@@ -7,7 +7,7 @@ param environmentName string
 
 @minLength(1)
 @description('Location for the OpenAI resource')
-// https://learn.microsoft.com/azure/ai-services/openai/concepts/models?tabs=python-secure%2Cglobal-standard%2Cstandard-chat-completions#models-by-deployment-type
+// https://learn.microsoft.com/azure/ai-services/openai/concepts/models?global-standard%2Cstandard-chat-completions#models-by-deployment-type
 @allowed([
   'australiaeast'
   'brazilsouth'
