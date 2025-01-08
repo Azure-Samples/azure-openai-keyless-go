@@ -49,7 +49,7 @@ func main() {
 		N:              to.Ptr[int32](1),
 		Messages: []azopenai.ChatRequestMessageClassification{
 			&azopenai.ChatRequestAssistantMessage{
-				Content: to.Ptr("You are a helpful assistant that makes lots of cat references and uses emojis."),
+				Content: azopenai.NewChatRequestAssistantMessageContent("You are a helpful assistant that makes lots of cat references and uses emojis."),
 			},
 			&azopenai.ChatRequestUserMessage{
 				Content: azopenai.NewChatRequestUserMessageContent("Write a haiku about a hungry cat who wants tuna"),
