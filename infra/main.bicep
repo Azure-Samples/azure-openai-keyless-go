@@ -7,7 +7,7 @@ param environmentName string
 
 @minLength(1)
 @description('Location for the OpenAI resource')
-// https://learn.microsoft.com/azure/ai-services/openai/concepts/models?global-standard%2Cstandard-chat-completions#models-by-deployment-type
+// https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?pivots=azure-openai&tabs=global-standard-aoai%2Cstandard-chat-completions%2Cglobal-standard#models-by-deployment-type
 @allowed([
   'australiaeast'
   'brazilsouth'
@@ -44,7 +44,7 @@ param gptModelName string = 'gpt-4o-mini'
 
 @description('Version of the GPT model to deploy')
 // See version availability in this table:
-// https://learn.microsoft.com/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#models-by-deployment-type
+// https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?pivots=azure-openai&tabs=global-standard-aoai%2Cstandard-chat-completions%2Cglobal-standard#models-by-deployment-type
 param gptModelVersion string = '2024-07-18'
 
 @description('Name of the model deployment (can be different from the model name)')
